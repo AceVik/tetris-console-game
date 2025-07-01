@@ -1,0 +1,16 @@
+[package]
+name = "tetris-console-game"
+version = "1.0.0"
+edition = "2024"
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
+
+[dependencies]
+chrono = "0.4.41"
+crossterm = "0.29.0"
+rand = "0.9.1"
+rodio = { version = "0.20.1", features = ["vorbis", "mp3"] }
